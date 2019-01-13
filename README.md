@@ -1,5 +1,7 @@
 # Home-Security-Identifier-Java (WATSecure)
-A project constructed from APIs at Hack the North 2018, a hackathon at Waterloo, Ontario. Uses OpenCV to project and save images, which sent to an image recognition AI in the IBM Watson Cloud. The intent was to implement this software to provide a good way to send a text to one's phone when someone uses one's doorbell or when something triggers a motion sensor, as well as providing an image and an AI produced suggestion of who it is at the door. No actual product exists, only the working project files.
+A project constructed from APIs at Hack the North 2018, a hackathon at Waterloo, Ontario. Uses OpenCV to project and save images, which are sent to an image recognition AI in the IBM Watson Cloud to predict who is in the picture and sends a text message to a phone number using Twilio's API. The intent was to provide a good way to send a text to one's phone when someone uses a doorbell or when something triggers a motion sensor, as well as providing an image and an AI produced suggestion of who it is at the door. No actual product exists, only the working project files. The text message function has been disabled, but the function is included in the project files because the Twilio API subscription expired. 
+
+A project in collaboration with Kouthar Waled, Alex Bakker, and Youssef Mohamed.
 
 Demo from the hackathon: https://devpost.com/software/watsecure-io
 
@@ -22,6 +24,9 @@ Note: the project can be run on other IDEs, but I simply just used NetBeans
 
 6.The program should be running if 2 windows pop up; 1 should be empty with the Title "Button Simulator" and 1 should take in live image feedback from the default webcam on your device. To run a query, simply click within the blank frame named "Button Simulator", and the output should show up in the console window.
 ![alt text](https://github.com/tomzyzhu/Home-Security-Identifier-Java/blob/master/How%20to%20Images/5.png "Image 5")
+
+Here is an example post button click.
+![alt text](https://github.com/tomzyzhu/Home-Security-Identifier-Java/blob/master/How%20to%20Images/6.PNG "Image 6")
 
 The more notable output comes from the JSON blurb, which is the query from the trained AI on IBM Watson.
 ### Example JSON Queries:
@@ -70,3 +75,10 @@ Below is a query that has "Tom" as the most confident class with 0.776 confidenc
   ]
 }
 ```
+## Issues
+1. There is no hardware implementation, as this is just a very primitive working setup.
+2. As a result of using only about 30 images to train the AI, the predictions are not very accurate. 
+
+## Next steps and future improvements
+1. Integrate physical button or mottion sensor compatibility.
+2. Increase the dataset of available images, and retrain the Watson AI.
