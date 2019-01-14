@@ -1,5 +1,5 @@
 # Home-Security-Identifier-Java (WATSecure)
-A project constructed from APIs at Hack the North 2018, a hackathon at Waterloo, Ontario. Uses OpenCV to project and save images, which are sent to an image recognition AI in the IBM Watson Cloud to predict who is in the picture and sends a text message to a phone number using Twilio's API. The intent was to provide a good way to send a text to one's phone when someone uses a doorbell or when something triggers a motion sensor, as well as providing an image and an AI produced suggestion of who it is at the door. No actual product exists, only the working project files. The text message function has been disabled, but the function is included in the project files because the Twilio API subscription expired. 
+A project constructed from APIs at Hack the North 2018, a hackathon at Waterloo, Ontario. Uses <b>OpenCV to project and save images</b>, which are sent to an <b>image recognition AI in the IBM Watson Cloud</b> to predict who is in the picture and sends a <b>text message to a phone number using Twilio's API</b>. The intent was to provide a good way to send a text to one's phone when someone uses a doorbell or when something triggers a motion sensor, as well as providing an image and an AI produced suggestion of who it is at the door. No actual product exists, only the working project files. <b>The text message function has been disabled</b> because the Twilio API subscription expired, but the function is included in the project files. 
 
 A project in collaboration with Kouthar Waled, Alex Bakker, and Youssef Mohamed.
 
@@ -28,7 +28,7 @@ Note: the project can be run on other IDEs, but I simply just used NetBeans
 Here is an example post button click.
 ![alt text](https://github.com/tomzyzhu/Home-Security-Identifier-Java/blob/master/How%20to%20Images/6.PNG "Image 6")
 
-The more notable output comes from the JSON blurb, which is the query from the trained AI on IBM Watson.
+Although there is a pseudo-text box that "simulates" the not functional Twilio text function, the more notable output comes from the JSON blurb in the console which is the query from the trained AI on IBM Watson.
 ### Example JSON Queries:
 Below is a query with no classes (Note: This only happens if the image recognition software has a confidence below a certain threshold for all classes. The default value I've left the threshold at is 0.60)
 ```
